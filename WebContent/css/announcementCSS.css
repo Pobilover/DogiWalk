@@ -1,0 +1,38 @@
+.sub_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.sub_top_right {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.board_search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.search_input input {
+    width: 400px;
+    height: 30px;
+    text-indent: 10px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    color: #5e5e5e;
+    font-weight: bold;
+}
+
+.board_search_btn {
+    width: 80px;
+    height: 30px;
+}
+
+.board_list {
+    padding: 20px;
+}

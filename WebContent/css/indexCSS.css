@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    background-color: #f6f6f6;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.pc {
+    display: none;
+    position: fixed;
+    z-index: -1;
+    width: 65%;
+    height: 100%;
+}
+
+.pc_main {
+    width: 100%;
+    height: 965px;
+    font-weight: 400;
+    background-image: url("https://drive.google.com/uc?export=view&id=1NV-vAeQJHC_a-ujRzKDEalKE55xHshc8");
+    background-size: 1800px;
+    background-repeat: no-repeat;
+    background-position: 45% 20%;
+}
+
+.mobile {
+    min-width: 320px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.pc_logo img {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    width: 200px;
+}
+
+/*---------- PC화면 카드 스타일 ----------*/
+@import url('https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+/* common(공통) */
+.container {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 650px;
+    width: 65%;
+}
+
+
+body {
+    font-family: 'NexonLv1Gothic';
+}
+
+/* card */
+
+.card {
+    background-color: #ededed;
+    width: 370px;
+    height: 270px;
+    /* padding: 20px; */
+    position: relative;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #444;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.card:hover {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.card h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 10px;
+    background-color: rgba(128, 128, 128, 0.4);
+    text-shadow: 1px 1px 1px #363636;
+    border-radius: 4px;
+}
+
+.card:nth-child(1) {
+    background-image: url("https://drive.google.com/uc?export=view&id=1O7gZ6BBITh3TKvY7YYf--laxX4F4Ni9f");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:nth-child(2) {
+    background-image: url("https://drive.google.com/uc?export=view&id=1iDdG8JqHL0TsycaQTNUUfoh03CTOBu6C");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:nth-child(3) {
+    background-image: url("https://drive.google.com/uc?export=view&id=1AxU_rIq-MnlXBzPlfK3YfLCNkJ7FS4fS");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text_cont {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px 20px 20px 20px;
+}
+
+.text_cont p {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 10px;
+    background-color: rgba(128, 128, 128, 0.4);
+    text-shadow: 1px 1px 1px #363636;
+    border-radius: 4px;
+}
+
+.more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px 20px 20px 20px;
+    width: 120px;
+    height: 38px;
+    background-color: #cfa002;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .pc {
+        display: block;
+    }
+
+    .pc_logo img {
+        display: block;
+    }
+
+    .mobile {
+        position: relative;
+        max-width: 540px;
+        min-height: 100%;
+        margin: 0 0 0 65%;
+        background: #fff;
+    }
+
+    .container {
+        display: block;
+    }
+}
+
+/*-------------------- iframe ----------------------------*/
+
+iframe {
+    border: 0;
+    z-index: 9999;
+}
+
